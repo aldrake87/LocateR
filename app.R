@@ -64,7 +64,11 @@ server <- function(input, output, session){
                        radius = 10,
                        group = "ImHere", weight = 5, opacity = .5,
                        color = "red", fillOpacity = .2,
-                       popup = paste0("You are here!"))
+                       popup = paste0("You are here!")) %>%
+      fitBounds(lng1 = round(as.numeric(input$myLong),1)-0.1, 
+                lng2 = round(as.numeric(input$myLong),1)+0.1, 
+                lat1 = round(as.numeric(input$myLat),1)-0.1, 
+                lat2 = round(as.numeric(input$myLat),1)+0.1)
   })
 }
 
