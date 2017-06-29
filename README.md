@@ -5,6 +5,6 @@ This mini-app uses the RShiny `tag` function to include additional JavaScript in
 
 The location will then be displayed on the map, along with the coordinates in the Lat/Long input boxes - the user can then change the marker location by modifying the `textInputs`.
 
-The app location defaults to London but you could add an additional fitBounds to the Proxy to pan to the user location when applied.
+The app location defaults to London (UK) using `fitBounds` but pans to the user location when applied.
 
 Working version of the app here [https://aldrake87.shinyapps.io/locater/](https://aldrake87.shinyapps.io/locater/)
